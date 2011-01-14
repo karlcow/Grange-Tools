@@ -1,0 +1,33 @@
+# Tools for La Grange
+
+Author: Karl Dubost, La Grange
+License: 
+
+I'm using tools to publish, check things once in a while, sometimes just once. These are really stupid tools not always well written (suggestions and improvements are welcome). I will add them little by little when I have time.
+
+## Validation.py
+
+My Web site is entirely made of static files. I wanted to check a few things with regards to these files.
+
+Given a list of URIs such as
+
+    http://www.la-grange.net/2006/12/08
+    http://www.la-grange.net/2006/12/09
+
+Get the following result listing Validation, encoding of the page as served by the server and encoding declared in the page..
+
+    http://www.la-grange.net/2006/12/08
+    validation: Valid 0 0
+    encoding-server: application/xhtml+xml; charset=utf-8; qs=0.999
+    encoding-page: utf-8
+    title: Dans la rue - 2006-12-08 - Carnet Web Karl
+
+    http://www.la-grange.net/2006/12/09
+    validation: Valid 0 0
+    encoding-server: application/xhtml+xml; charset=utf-8; qs=0.999
+    encoding-page: utf-8
+    title: Un an de plus - 2006-12-09 - Carnet Web Karl
+
+TODO: comparing the doctype and the mimetype
+
+## more to come
