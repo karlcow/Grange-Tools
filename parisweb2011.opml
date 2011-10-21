@@ -37,7 +37,7 @@
 		<outline text="Sam Dutton’s blog" description="" title="Sam Dutton’s blog" type="rss" version="RSS" htmlUrl="http://samdutton.wordpress.com" xmlUrl="http://samdutton.wordpress.com/feed/"/>
 		<outline text="Simplifying Interfaces » EN" description="" title="Simplifying Interfaces » EN" type="rss" version="RSS" htmlUrl="http://www.simplifyinginterfaces.com" xmlUrl="http://feeds.feedburner.com/SimplifyingInterfacesEn"/>
 		<outline text="Simplifying Interfaces » FR" description="" title="Simplifying Interfaces » FR" type="rss" version="RSS" htmlUrl="http://www.simplifyinginterfaces.com" xmlUrl="http://feeds.feedburner.com/SimplifyingInterfacesFr"/>
-		<outline text="Site Home" description="" title="Site Home" type="rss" version="RSS" htmlUrl="http://blogs.msdn.com/" xmlUrl="http://blogs.msdn.com/rss.aspx"/>
+		<outline text="David Rousset" description="" title="David Rousset" type="atom" version="Atom" htmlUrl="http://blogs.msdn.com/b/davrous/" xmlUrl="http://blogs.msdn.com/b/davrous/atom.aspx"/>
 		<outline text="Untitled Source" description="Un Glazman, un blog, un Glazblog" title="Untitled Source" type="rss" version="RSS" htmlUrl="http://www.glazman.org/weblog/dotclear/index.php?" xmlUrl="http://www.glazman.org/weblog/dotclear/index.php?feed/atom"/>
 	</body>
 </opml>
