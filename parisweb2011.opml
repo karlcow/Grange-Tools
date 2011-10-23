@@ -11,7 +11,7 @@
 		<outline text="Blog &amp; Blues" description="" title="Blog &amp; Blues" type="rss" version="RSS" htmlUrl="http://www.blog-and-blues.org/weblog/" xmlUrl="http://www.blog-and-blues.org/rss.php"/>
 		<outline text="Blog Temesis" description="Blog de la société Temesis, spécialisée dans le conseil, la formation et l'information sur la qualité, l'accessibilité et la conformité des services en ligne" title="Blog Temesis" type="rss" version="RSS" htmlUrl="http://blog.temesis.com/" xmlUrl="http://blog.temesis.com/feed/atom"/>
 		<outline text="Carnets de La Grange" description="Chroniques d'un poète urbain" title="Carnets de La Grange" type="rss" version="RSS" htmlUrl="http://www.la-grange.net/" xmlUrl="http://www.la-grange.net/feed.atom"/>
-		<outline text="cedmax.net" description="" title="cedmax.net" type="rss" version="RSS" htmlUrl="http://cedmax.net" xmlUrl="http://cedmax.net/feed/"/>
+		<outline text="cedmax.net" description="My little journey through myself" title="cedmax.net" type="rss" version="RSS" htmlUrl="http://cedmax.net" xmlUrl="http://cedmax.net/feed/"/>
 		<outline text="Chez Jérémie" description="" title="Chez Jérémie" type="rss" version="RSS" htmlUrl="http://jeremie.patonnier.net/" xmlUrl="http://jeremie.patonnier.net/feed/rss2"/>
 		<outline text="David Rault" description="" title="David Rault" type="rss" version="RSS" htmlUrl="http://davidrault.tumblr.com/" xmlUrl="http://davidrault.tumblr.com/rss"/>
 		<outline text="denisejacobs.com" description="Author, Speaker, Web Design Trainer &amp; Creativity Evangelist" title="denisejacobs.com" type="rss" version="RSS" htmlUrl="http://denisejacobs.com" xmlUrl="http://denisejacobs.com/feed/atom/"/>
