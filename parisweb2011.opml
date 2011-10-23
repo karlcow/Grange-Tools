@@ -20,6 +20,7 @@
 		<outline text="Flux RSS des billets et des pensées du site biologeek.com" description="" title="Flux RSS des billets et des pensées du site biologeek.com" type="rss" version="RSS" htmlUrl="http://www.biologeek.com/" xmlUrl="http://www.biologeek.com/data/rss/"/>
 		<outline text="Hanblog" description="" title="Hanblog" type="rss" version="RSS" htmlUrl="http://hanblog.info/blog/" xmlUrl="http://hanblog.info/blog/feed/atom"/>
 		<outline text="I am a Self-Made" description="Je te dis là" title="I am a Self-Made" type="rss" version="RSS" htmlUrl="http://www.celinecelines.com" xmlUrl="http://www.celinecelines.com/feed/atom/"/>
+		<outline text="Jonathan Blanchet" description="" title="Jonathan Blanchet - Blog" type="atom" version="Atom" htmlUrl="http://jblanche.fr/blog.html" xmlUrl="http://jblanche.fr/atom.xml" />
 		<outline text="karlcow" description="" title="karlcow" type="rss" version="RSS" htmlUrl="http://my.opera.com/karlcow/" xmlUrl="http://my.opera.com/karlcow/xml/rss/blog/"/>
 		<outline text="La Case de l'Oncle Tom" description="" title="La Case de l'Oncle Tom" type="rss" version="RSS" htmlUrl="http://pipes.yahoo.com/pipes/pipe.info?_id=11ab9e048cc6839ba6a93fe978e9ff79" xmlUrl="http://case.oncle-tom.net/feed/"/>
 		<outline text="Le bloc-notes ; ergonomie &amp; UX" description="" title="Le bloc-notes ; ergonomie &amp; UX" type="rss" version="RSS" htmlUrl="http://blocnotes.iergo.fr" xmlUrl="http://blocnotes.iergo.fr/feed/"/>
@@ -29,6 +30,7 @@
 		<outline text="nota-bene.org" description="" title="nota-bene.org" type="rss" version="RSS" htmlUrl="http://nota-bene.org/" xmlUrl="http://www.nota-bene.org/spip.php?page=rss2"/>
 		<outline text="P@ Log" description="" title="P@ Log" type="rss" version="RSS" htmlUrl="http://wordpress.chanezon.com" xmlUrl="http://wordpress.chanezon.com/?feed=rss2"/>
 		<outline text="paulrouget.com" description="" title="paulrouget.com" type="rss" version="RSS" htmlUrl="http://paulrouget.com/" xmlUrl="http://paulrouget.com/index.xml"/>
+		<outline text="papadiv.com" description="" title="papadiv" type="rss" version="RSS" htmlUrl="http://www.papadiv.com/feed/" />
 		<outline text="Pour les formats ouverts !" description="" title="Pour les formats ouverts !" type="rss" version="RSS" htmlUrl="http://formats-ouverts.org/blog/" xmlUrl="http://formats-ouverts.org/rss.php"/>
 		<outline text="QuirksBlog" description="" title="QuirksBlog" type="rss" version="RSS" htmlUrl="http://www.quirksmode.org/blog/" xmlUrl="http://www.quirksmode.org/blog/atom.xml"/>
 		<outline text="Robert's talk" description="" title="Robert's talk" type="rss" version="RSS" htmlUrl="http://robertnyman.com" xmlUrl="http://feeds.feedburner.com/robertnyman"/>
@@ -38,6 +40,6 @@
 		<outline text="Simplifying Interfaces » EN" description="" title="Simplifying Interfaces » EN" type="rss" version="RSS" htmlUrl="http://www.simplifyinginterfaces.com" xmlUrl="http://feeds.feedburner.com/SimplifyingInterfacesEn"/>
 		<outline text="Simplifying Interfaces » FR" description="" title="Simplifying Interfaces » FR" type="rss" version="RSS" htmlUrl="http://www.simplifyinginterfaces.com" xmlUrl="http://feeds.feedburner.com/SimplifyingInterfacesFr"/>
 		<outline text="David Rousset" description="" title="David Rousset" type="atom" version="Atom" htmlUrl="http://blogs.msdn.com/b/davrous/" xmlUrl="http://blogs.msdn.com/b/davrous/atom.aspx"/>
-		<outline text="Untitled Source" description="Un Glazman, un blog, un Glazblog" title="Untitled Source" type="rss" version="RSS" htmlUrl="http://www.glazman.org/weblog/dotclear/index.php?" xmlUrl="http://www.glazman.org/weblog/dotclear/index.php?feed/atom"/>
+		<outline text="Glazblog" description="Un Glazman, un blog, un Glazblog" title="Glazblog" type="rss" version="RSS" htmlUrl="http://www.glazman.org/weblog/dotclear/index.php?" xmlUrl="http://www.glazman.org/weblog/dotclear/index.php?feed/atom"/>
 	</body>
 </opml>
