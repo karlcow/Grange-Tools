@@ -30,7 +30,7 @@
 		<outline text="nota-bene.org" description="" title="nota-bene.org" type="rss" version="RSS" htmlUrl="http://nota-bene.org/" xmlUrl="http://www.nota-bene.org/spip.php?page=rss2"/>
 		<outline text="P@ Log" description="" title="P@ Log" type="rss" version="RSS" htmlUrl="http://wordpress.chanezon.com" xmlUrl="http://wordpress.chanezon.com/?feed=rss2"/>
 		<outline text="paulrouget.com" description="" title="paulrouget.com" type="rss" version="RSS" htmlUrl="http://paulrouget.com/" xmlUrl="http://paulrouget.com/index.xml"/>
-		<outline text="papadiv.com" description="" title="papadiv" type="rss" version="RSS" htmlUrl="http://www.papadiv.com/feed/" />
+		<outline text="papadiv.com" description="" title="papadiv" type="rss" version="RSS" htmlURL="http://www.papadiv.com" xmlUrl="http://www.papadiv.com/feed/" />
 		<outline text="Pour les formats ouverts !" description="" title="Pour les formats ouverts !" type="rss" version="RSS" htmlUrl="http://formats-ouverts.org/blog/" xmlUrl="http://formats-ouverts.org/rss.php"/>
 		<outline text="QuirksBlog" description="" title="QuirksBlog" type="rss" version="RSS" htmlUrl="http://www.quirksmode.org/blog/" xmlUrl="http://www.quirksmode.org/blog/atom.xml"/>
 		<outline text="Robert's talk" description="" title="Robert's talk" type="rss" version="RSS" htmlUrl="http://robertnyman.com" xmlUrl="http://feeds.feedburner.com/robertnyman"/>
