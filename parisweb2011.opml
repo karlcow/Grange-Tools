@@ -42,5 +42,6 @@
 		<outline text="Simplifying Interfaces » FR" description="" title="Simplifying Interfaces » FR" type="rss" version="RSS" htmlUrl="http://www.simplifyinginterfaces.com" xmlUrl="http://feeds.feedburner.com/SimplifyingInterfacesFr"/>
 		<outline text="David Rousset" description="" title="David Rousset" type="atom" version="Atom" htmlUrl="http://blogs.msdn.com/b/davrous/" xmlUrl="http://blogs.msdn.com/b/davrous/atom.aspx"/>
 		<outline text="Glazblog" description="Un Glazman, un blog, un Glazblog" title="Glazblog" type="rss" version="RSS" htmlUrl="http://www.glazman.org/weblog/dotclear/index.php?" xmlUrl="http://www.glazman.org/weblog/dotclear/index.php?feed/atom"/>
+		<outline text="Webatou" description="Le web accessible à tous title="Webatou" type="rss" version="RSS" htmlUrl="http://blog.webatou.info/" xmlURl="http://blog.webatou.info/feed/rss2" />
 	</body>
 </opml>
