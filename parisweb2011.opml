@@ -5,6 +5,7 @@
 		<title>ParisWeb 2011 OPML</title>
 		</head>
 	<body>
+		<outline text="accessiWatch" description="Advocating web accessibility and social inclusion" title="accessiWatch" type="rss" version="RSS" htmlUrl="http://dboudreau.posterous.com/" xmlUrl="http://feeds.feedburner.com/accessiWatch" />
 		<outline text="Art Beat Me!" description="" title="Art Beat Me!" type="rss" version="RSS" htmlUrl="http://ot.zoy.org/" xmlUrl="http://olivier.thereaux.net/atom.xml"/>
 		<outline text="Benoit Piette" description="" title="Benoit Piette" type="rss" version="RSS" htmlUrl="http://www.benoitpiette.com/blogue" xmlUrl="http://www.benoitpiette.com/blogue/feed/"/>
 		<outline text="Blog &amp; Blues" description="" title="Blog &amp; Blues" type="rss" version="RSS" htmlUrl="http://www.blog-and-blues.org/weblog/" xmlUrl="http://www.blog-and-blues.org/rss.php"/>
