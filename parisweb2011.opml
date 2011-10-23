@@ -15,7 +15,7 @@
 		<outline text="Chez Jérémie" description="" title="Chez Jérémie" type="rss" version="RSS" htmlUrl="http://jeremie.patonnier.net/" xmlUrl="http://jeremie.patonnier.net/feed/rss2"/>
 		<outline text="David Rault" description="" title="David Rault" type="rss" version="RSS" htmlUrl="http://davidrault.tumblr.com/" xmlUrl="http://davidrault.tumblr.com/rss"/>
 		<outline text="denisejacobs.com" description="Author, Speaker, Web Design Trainer &amp; Creativity Evangelist" title="denisejacobs.com" type="rss" version="RSS" htmlUrl="http://denisejacobs.com" xmlUrl="http://denisejacobs.com/feed/atom/"/>
-		<outline text="devOpera Articles" description="" title="devOpera Articles" type="rss" version="RSS" htmlUrl="" xmlUrl="http://dev.opera.com/feeds/rss/articles"/>
+		<outline text="devOpera Articles" description="Follow the standards. Brek the ruels" title="devOpera Articles" type="rss" version="RSS" htmlUrl="http://dev.opera.com/" xmlUrl="http://dev.opera.com/feeds/rss/articles"/>
 		<outline text="Don't call me DOM" description="" title="Don't call me DOM" type="rss" version="RSS" htmlUrl="http://people.w3.org/~dom" xmlUrl="http://people.w3.org/~dom/feed/rdf/"/>
 		<outline text="Ergolab - Nouveautés" description="" title="Ergolab - Nouveautés" type="rss" version="RSS" htmlUrl="http://www.ergolab.net" xmlUrl="http://feeds.feedburner.com/ergolab"/>
 		<outline text="Flux RSS des billets et des pensées du site biologeek.com" description="" title="Flux RSS des billets et des pensées du site biologeek.com" type="rss" version="RSS" htmlUrl="http://www.biologeek.com/" xmlUrl="http://www.biologeek.com/data/rss/"/>
