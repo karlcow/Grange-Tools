@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<outline text="accessiWatch" description="Advocating web accessibility and social inclusion" title="accessiWatch" type="rss" version="RSS" htmlUrl="http://dboudreau.posterous.com/" xmlUrl="http://feeds.feedburner.com/accessiWatch"/>
-		<outine text="Are you agile?" description="Nudge, Nudge, wink wink, n'en dites pas plus" title="Are you Agile?" type="rss" version="RSS" htmlUrl="http://www.areyouagile.com/" xmlUrl="http://www.areyouagile.com/feed/"/>
+		<outline text="Are you agile?" description="Nudge, Nudge, wink wink, n'en dites pas plus" title="Are you Agile?" type="rss" version="RSS" htmlUrl="http://www.areyouagile.com/" xmlUrl="http://www.areyouagile.com/feed/"/>
 		<outline text="Art Beat Me!" description="" title="Art Beat Me!" type="rss" version="RSS" htmlUrl="http://ot.zoy.org/" xmlUrl="http://olivier.thereaux.net/atom.xml"/>
 		<outline text="Benoit Piette" description="" title="Benoit Piette" type="rss" version="RSS" htmlUrl="http://www.benoitpiette.com/blogue" xmlUrl="http://www.benoitpiette.com/blogue/feed/"/>
 		<outline text="Biologeek.com" description="" title="Flux RSS des billets et des pensées du site biologeek.com" type="rss" version="RSS" htmlUrl="http://www.biologeek.com/" xmlUrl="http://www.biologeek.com/data/rss/"/>
@@ -30,7 +30,7 @@
 		<outline text="La Case de l'Oncle Tom" description="" title="La Case de l'Oncle Tom" type="rss" version="RSS" htmlUrl="http://pipes.yahoo.com/pipes/pipe.info?_id=11ab9e048cc6839ba6a93fe978e9ff79" xmlUrl="http://case.oncle-tom.net/feed/"/>
 		<outline text="Le bloc-notes ; ergonomie &amp; UX" description="" title="Le bloc-notes ; ergonomie &amp; UX" type="rss" version="RSS" htmlUrl="http://blocnotes.iergo.fr" xmlUrl="http://blocnotes.iergo.fr/feed/"/>
 		<outline text="Les coulisses de Voyages-sncf.com" description="" title="Les coulisses de Voyages-sncf.com" type="rss" version="RSS" htmlUrl="http://coulisses.voyages-sncf.com" xmlUrl="http://coulisses.voyages-sncf.com/feed/"/>
-		<outine text="maratz.com: Hypertext rulez™ | Marko Dugonjić on web design" description="maratz.com is a collection of personal thoughts on web design, typography, web standards, user experience and occasional superflous banter brought irregulary by Marko Dugonjić" title="Maratz Blog" htmlUrl="http://www.maratz.com/blog/" xmlUrl="http://www.maratz.com/blog/feed/"/>
+		<outline text="maratz.com: Hypertext rulez™ | Marko Dugonjić on web design" description="maratz.com is a collection of personal thoughts on web design, typography, web standards, user experience and occasional superflous banter brought irregulary by Marko Dugonjić" title="Maratz Blog" htmlUrl="http://www.maratz.com/blog/" xmlUrl="http://www.maratz.com/blog/feed/"/>
 		<outline text="Marie&amp;Julien" description="Avec des vrais morceaux de graphistes dedans !" title="Marie&amp;Julien" type="atom" version="Atom" htmlUrl="http://www.mariejulien.com/" xmlUrl="http://www.mariejulien.com/?feed/atom"/>
 		<outline text="Maurice Bloggue" description="" title="Maurice Bloggue" type="rss" version="RSS" htmlUrl="http://svay.com/blog/index/" xmlUrl="http://svay.com/blog/index/feed/atom"/>
 		<outline text="Medias sous-titrés" description="Le portail de référence sur le sous-titrage" title="Medias sous-titrés" type="rss" version="RSS" htmlUrl="http://www.medias-soustitres.com/" xmlUrl="http://www.medias-soustitres.com/spip.php?page=backend"/>
