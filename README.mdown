@@ -30,4 +30,6 @@ Get the following result listing Validation, encoding of the page as served by t
 
 TODO: comparing the doctype and the mimetype
 
-## more to come
+## parisweb2011.opml
+
+An OPML file of the Paris Web 2011 speakers. It will give you things to read until Paris Web 2012.
