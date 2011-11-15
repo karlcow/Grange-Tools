@@ -33,3 +33,9 @@ TODO: comparing the doctype and the mimetype
 ## parisweb2011.opml
 
 An OPML file of the Paris Web 2011 speakers. It will give you things to read until Paris Web 2012.
+
+## photodated.sh
+
+This script is a very simple bash script, taking a list of photos, extracting the EXIF date and time and moving the photos in a dated space according to this date and renaming with the time. The script is made for my own usage but can be updated to your own usage. 
+
+**Requirement**:  [epinfo](http://www.lightner.net/lightner/bruce/photopc/epinfo.html)
