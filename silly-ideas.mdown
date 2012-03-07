@@ -7,3 +7,11 @@ These are list of silly ideas that go through my mind.
 1. Depending on your location, grab the temperature now here. 
 2. Show a list of places in the world with the exact same temperature.
 3. Put them on a map
+
+## Longest Day On Webcam
+
+1. On June 21
+2. Record the images of Webcams in each individual timezone (~24).
+3. Put them in order of timezone
+4. Replay the full day accelerated
+5. Optional: In a room, with 24 small screens in line, as a permanent exhibition, show the images of now in the world.
