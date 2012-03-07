@@ -15,3 +15,12 @@ These are list of silly ideas that go through my mind.
 3. Put them in order of timezone
 4. Replay the full day accelerated
 5. Optional: In a room, with 24 small screens in line, as a permanent exhibition, show the images of now in the world.
+
+## Name A Tree
+
+1. An international geolocated database (registry) of trees
+2. Trees are added little by little by people
+3. An app shows the geolocated trees around you
+4. You can add your own when walking. 
+5. You can give a name (if it doesn't have one yet) to the tree and its species
+6. When trees are cut, you just say it on the file. The individual record stays in the DB, even if a new tree is planted at the same place.
