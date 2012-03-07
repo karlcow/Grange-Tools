@@ -1,0 +1,9 @@
+# Silly ideas
+
+These are list of silly ideas that go through my mind.
+
+## Today Temperature Elsewhere
+
+1. Depending on your location, grab the temperature now here. 
+2. Show a list of places in the world with the exact same temperature.
+3. Put them on a map
