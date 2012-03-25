@@ -24,3 +24,11 @@ These are list of silly ideas that go through my mind.
 4. You can add your own when walking. 
 5. You can give a name (if it doesn't have one yet) to the tree and its species
 6. When trees are cut, you just say it on the file. The individual record stays in the DB, even if a new tree is planted at the same place.
+
+## Globe and Google Earth
+
+1. Buy a World Globe with 2 axes of freedom
+2. A pin pointing at the surface for reference
+3. Two rotation sensors on the axes
+4. A video-projector plugged to a computer
+4. When a point of the globe is under the pin, the lat and long are sent to the computer for displaying the satellite image of this place on Earth.
