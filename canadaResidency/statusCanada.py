@@ -4,7 +4,7 @@
 partir-canada.py
 
 Created by Karl Dubost on 2010-11-10.
-Modified on 2012-01-17
+Modified on 2012-05-31
 Copyright (c) 2010 Grange.
 Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php.
 """
@@ -18,6 +18,7 @@ import sys
 YEAR = 365
 STAYMIN = 2 * YEAR  # minimum days in Canada over 5 years
 OUTMAX = 3 * YEAR  # maximum days outside Canada over 5 years
+CITIZEN = 4 * YEAR  # period for computing the citizenship constraint
 COUNTMAX = 5 * YEAR  # maximum period for counting
 DATEFORMAT = "%Y-%m-%d"
 TODAY = datetime.datetime.today()
@@ -114,8 +115,8 @@ def main():
             print "OutCanada: %s days" % str(daysOutCanada)
         elif daysOutCanada < OUTMAX - 1:
             print "Permanent residency is safe"
-            print "InCanada:  %s days on %s days" % (str(daysInCanada), str(STAYMIN))
-            print "OutCanada: %s days" % str(daysOutCanada)
+            print "InCanada:  %s days (minimum %s days on 5 years)" % (str(daysInCanada), str(STAYMIN))
+            print "OutCanada: %s days on 5 years" % str(daysOutCanada)
             print "Citizenship Request in %s days (if no trip)" % str(OUTMAX - daysInCanada)
     else:
         print "Less than 5 years since landing"
