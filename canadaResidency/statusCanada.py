@@ -12,14 +12,9 @@ Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.p
 import time
 import datetime
 import argparse
-import sys
 
 # CONSTANT
 YEAR = 365
-STAYMIN = 2 * YEAR  # minimum days in Canada over 5 years
-OUTMAX = 3 * YEAR  # maximum days outside Canada over 5 years
-CITIZEN = 4 * YEAR  # period for computing the citizenship constraint
-COUNTMAX = 5 * YEAR  # maximum period for counting
 DATEFORMAT = "%Y-%m-%d"
 TODAY = datetime.datetime.today()
 
@@ -42,8 +37,8 @@ def getLandingDay(data):
     return data[0][0]
 
 
-def getInCan(data, firstday, beforefiveyear):
-    "compute the number of days spent in Canada since landing"
+def getInCan(firstday, data):
+    "compute the number of days spent in Canada in between now and firstday"
     # going through the data
     stay = 0
     for (arrival, departure) in data:
@@ -53,21 +48,66 @@ def getInCan(data, firstday, beforefiveyear):
         # conversion to datetime object
         adate = stringtodate(arrival, DATEFORMAT)
         ddate = stringtodate(departure, DATEFORMAT)
-        if beforefiveyear:
-            if ddate < firstday:
-                # not counting when it's more than 5 years ago
-                daysIn = 0
-                pass
-            elif ddate >= firstday:
-                if adate > firstday:
-                    staycountdate = ddate - adate
-                else:
-                    staycountdate = ddate - firstday
-                daysIn = staycountdate.days
-        else:
-            print sys.exit("not coded yet the case less than 5 years")
+        if ddate < firstday:
+            daysIn = 0
+        elif ddate >= firstday:
+            if adate > firstday:
+                staycountdate = ddate - adate
+            else:
+                staycountdate = ddate - firstday
+            daysIn = staycountdate.days
         stay = stay + daysIn
     return stay
+
+
+def statusresident(dayssincelanding, firstdaydate, data):
+    "compute the status for permanent residency"
+    print "-------------------------------------------------"
+    print "PERMANENT RESIDENCY: [Rule: 730 min on 1825 days]"
+    if dayssincelanding in range(3 * YEAR):
+        datestart = firstdaydate
+        daysInCanada = getInCan(datestart, data)
+        print "%s days in Canada on a total of %s days" % (daysInCanada, dayssincelanding)
+    elif dayssincelanding in range(3 * YEAR, 5 * YEAR):
+        datestart = firstdaydate
+        daysInCanada = getInCan(datestart, data)
+        daysOut = dayssincelanding - daysInCanada
+        if daysInCanada <= 2 * YEAR:
+            print "YOU MUST COME BACK NOW."
+        else:
+            print "You spent %s days outside on the last %s" % (daysOut, daysInCanada)
+            print "Be careful"
+    else:
+        datestart = TODAY - datetime.timedelta(days=5 * YEAR)
+        daysInCanada = getInCan(datestart, data)
+        daysOut = (5 * YEAR) - daysInCanada
+        if daysInCanada < 2 * YEAR:
+            print "YOU MUST COME BACK NOW."
+        else:
+            print "You spent %s days outside on the last %s" % (daysOut, 5 * YEAR)
+            print "You can go out of Canada for %s days" % (daysInCanada - (2 * YEAR))
+
+
+def citizenship(dayssincelanding, firstdaydate, data):
+    "compute when you can apply to citizenship"
+    print "-------------------------------------------------"
+    print "CITIZENSHIP: [Rule: 1095 min on 1460 days]"
+    if dayssincelanding < 3 * YEAR:
+        print "TOO EARLY to apply for citizenship."
+        print "you need at least 3 years (1095 days)."
+    elif dayssincelanding >= 3 * YEAR:
+        if dayssincelanding <= 4 * YEAR:
+            datestart = firstdaydate
+        else:
+            datestart = TODAY - datetime.timedelta(days=4 * YEAR)
+
+        daysInCanada = getInCan(datestart, data)
+        if daysInCanada < 1095:
+            print "TOO EARLY to apply for citizenship"
+            print "%s days on 1095 days minimum" % str(daysInCanada)
+        else:
+            print "CONGRATULATIONS! You can apply"
+            print "%s days on 1095 days minimum" % str(daysInCanada)
 
 
 def parse(FILE):
@@ -93,34 +133,22 @@ def main():
     datafile = args.data[0]
     data = parse(datafile)
 
+    # Get the date of Landing
     landingday = getLandingDay(data)
+    # Convert it to date format
     firstdaydate = stringtodate(landingday, DATEFORMAT)
-    # how many days since the first arrival
+    # How many days since the first arrival
     staycountdate = TODAY - firstdaydate
     # number of days since the first landing (integer)
-    sincelanding = staycountdate.days
+    dayssincelanding = staycountdate.days
+    # Display results
+    print "-------------------------------------------------"
+    print "Landing: %s" % str(landingday)
+    print "Since landing: %s days" % str(dayssincelanding)
+    statusresident(dayssincelanding, firstdaydate, data)
+    citizenship(dayssincelanding, firstdaydate, data)
+    print "-------------------------------------------------"
 
-    if sincelanding > COUNTMAX:
-        beforefiveyear = True
-        print "More than 5 years since landing"
-        firstcountday = TODAY - datetime.timedelta(days=COUNTMAX)
-        print "We count starting", firstcountday
-        daysInCanada = getInCan(data, firstcountday, beforefiveyear)
-        daysOutCanada = COUNTMAX - daysInCanada
-        if daysOutCanada > OUTMAX - 1:
-            print "Permanent residency lost"
-            print "OutCanada: %s days" % str(daysOutCanada)
-        elif daysOutCanada == OUTMAX - 1:
-            print "You have to come back today in Canada"
-            print "OutCanada: %s days" % str(daysOutCanada)
-        elif daysOutCanada < OUTMAX - 1:
-            print "Permanent residency is safe"
-            print "InCanada:  %s days (minimum %s days on 5 years)" % (str(daysInCanada), str(STAYMIN))
-            print "OutCanada: %s days on 5 years" % str(daysOutCanada)
-            print "Citizenship Request in %s days (if no trip)" % str(OUTMAX - daysInCanada)
-    else:
-        print "Less than 5 years since landing"
-        beforefiveyear = False
 
 if __name__ == '__main__':
     main()
