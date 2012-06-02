@@ -39,3 +39,24 @@ An OPML file of the Paris Web 2011 speakers. It will give you things to read unt
 This script is a very simple bash script, taking a list of photos, extracting the EXIF date and time and moving the photos in a dated space according to this date and renaming with the time. The script is made for my own usage but can be updated to your own usage. 
 
 **Requirement**:  [epinfo](http://www.lightner.net/lightner/bruce/photopc/epinfo.html)
+
+## CanadaResidency 
+
+* Compute if your Canadian permanent resident status is at risk 
+* Compute if you are elligible to Canadian Citizenship
+
+Output example:
+
+    → ./statusCanada.py daysInCanada.data 
+    -------------------------------------------------
+    Landing: 2001-12-05
+    Since landing: 3831 days
+    -------------------------------------------------
+    PERMANENT RESIDENCY: [Rule: 730 min on 1825 days]
+    You spent 729 days outside on the last 1825
+    You can go out of Canada for 366 days
+    -------------------------------------------------
+    CITIZENSHIP: [Rule: 1095 min on 1460 days]
+    CONGRATULATIONS! You can apply
+    1096 days on 1095 days minimum
+    -------------------------------------------------
