@@ -8,7 +8,7 @@ Interpret and Share in Open Environments.
 
 ## Summary
 
-Understanding of the Web platform dipped into a long series of interactions of the different Technical Web communities. Putting myself in area where I am an amateur so I am challenged. 
+Understanding of the Web platform dipped into a long series of interactions with the different Technical Web communities. Putting myself in area where I am an amateur so I am challenged. 
 
 ## Qualifications and Expertise
 
