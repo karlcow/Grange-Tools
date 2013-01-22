@@ -12,6 +12,7 @@ Understanding of the Web platform dipped into a long series of interactions with
 
 ## Qualifications and Expertise
 
+* Listener 
 @@I accept pull requests on this section ;) @@ 
 
 ## Some Projects 
@@ -23,7 +24,7 @@ Understanding of the Web platform dipped into a long series of interactions with
 
 ## History (Recent to old stuff)
 
-* Since 2010-10 [Web Opener](http://my.opera.com/karlcow/), [Developer Relations](http://my.opera.com/karlcow/), [Opera Software](http://opera.com/), Oslo, Norway. Worked remotely from Montreal, Canada.
+* 2010-10 to 2013-01 [Web Opener](http://my.opera.com/karlcow/), [Developer Relations](http://my.opera.com/karlcow/), [Opera Software](http://opera.com/), Oslo, Norway. Worked remotely from Montreal, Canada.
 * 2009-01 to 2010-09 Technical Director, [Pheromone](http://lab.pheromone.ca/) Web Agency, Montreal, Canada
 * 2000-06 to 2008-11 [Conformance Manager](http://www.w3.org/People/karl/), [W3C](http://www.w3.org/) (World Wide Web Consortium). Worked (remotely/office) from Sophia-Antipolis (France), Fujisawa (Japan) and Montreal (Canada)
 * 1999-12 to 2000-05 Technical Director, [Angie Interactive](http://www.angie.fr/) Web Agency, Paris, France
