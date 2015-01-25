@@ -4,7 +4,7 @@ These are list of silly ideas that go through my mind.
 
 ## Today Temperature Elsewhere
 
-1. Depending on your location, grab the temperature now here. 
+1. Depending on your location, grab the temperature now here.
 2. Show a list of places in the world with the exact same temperature.
 3. Put them on a map
 
@@ -21,7 +21,7 @@ These are list of silly ideas that go through my mind.
 1. An international geolocated database (registry) of trees
 2. Trees are added little by little by people
 3. An app shows the geolocated trees around you
-4. You can add your own when walking. 
+4. You can add your own when walking.
 5. You can give a name (if it doesn't have one yet) to the tree and its species
 6. When trees are cut, you just say it on the file. The individual record stays in the DB, even if a new tree is planted at the same place.
 
@@ -32,3 +32,12 @@ These are list of silly ideas that go through my mind.
 3. Two rotation sensors on the axes
 4. A video-projector plugged to a computer
 4. When a point of the globe is under the pin, the lat and long are sent to the computer for displaying the satellite image of this place on Earth.
+
+## Automatic Gathering of Bus Routes and Schedules
+
+1. A web app
+2. You push a button when you enter the bus (geo + time)
+3. You enter the line name or number
+4. You push a button when you exit the bus (geo + time)
+
+Little by little, it will agregate the most probable schedules and locations where you need the bus.
