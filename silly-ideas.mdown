@@ -41,3 +41,15 @@ These are list of silly ideas that go through my mind.
 4. You push a button when you exit the bus (geo + time)
 
 Little by little, it will agregate the most probable schedules and locations where you need the bus.
+
+## Managing Paper Receipts
+
+1. A web app on your mobile.
+2. Take a photo of a paper receipt
+3. The app identifies the pattern of the texts on the receipt (see below)
+4. It creates a JSON (or whatever format for the data of the receipt)
+5. We can browse the list through dates, locations, etc.
+
+* Receipts contain formatted information (such as dates, locations, prices, taxes, name of the shop, sometimes logo, etc.)
+* We go often to the same places on a daily basis. 80% of the time we get receipts with exactly the same pattern. OUR Supermarket, OUR combinis, OUR cafe, etc.
+* When the application doesn't know the pattern there is a feature to define each block of text and their meaning. The second time the app is able to do pattern matching with the bank of templates it has.
