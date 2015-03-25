@@ -127,6 +127,25 @@ function toMarkdown(node){
 // Selection of Content in Web Page
 // --------------------------------
 
+// `getDomSelection` this returns a domnode
+function getDomSelection() {
+    var domnode = document.createDocumentFragment();
+    if (typeof window.getSelection != undefined) {
+        selection = window.getSelection();
+        // Firefox allows for multiple disjoint selections
+        // https://developer.mozilla.org/en-US/docs/Web/API/Selection/rangeCount
+        if (selection.rangeCount) {
+            for (var i = 0, len = selection.rangeCount; i < len; ++i) {
+                var container = document.createElement("div");
+                container.appendChild(selection.getRangeAt(i).cloneContents());
+                domnode.appendChild(container);
+            }
+        }
+    }
+    return domnode;
+}
+
+
 // Email Generation
 // ----------------
 
@@ -159,3 +178,4 @@ var docbody = '';
 var doctitle = getDocTitle();
 var docuri = getDocUri();
 var docdate = getDocDate();
+var domnode = getDomSelection();
