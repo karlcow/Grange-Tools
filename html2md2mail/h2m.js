@@ -13,6 +13,7 @@ Code origin:
 
 Karl Dubost. MIT License.
 
+TODO: Normalize relative links starting with /something or ../foo/bar/
 */
 
 // DOM to MarkDown Code
