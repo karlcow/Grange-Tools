@@ -149,3 +149,13 @@ function getDocDate() {
 function getDocUri() {
     return document.location;
 }
+
+// Core Program
+// ------------
+
+// we need a registry for Markdown links
+var linkregistry = Object.create(null);
+var docbody = '';
+var doctitle = getDocTitle();
+var docuri = getDocUri();
+var docdate = getDocDate();
