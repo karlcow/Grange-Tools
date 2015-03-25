@@ -118,7 +118,7 @@ function nodeToMarkdown(tree,mode){
 
 // `toMarkdown` output the final converted text into MarkDown
 function toMarkdown(node){
-    return nodeToMarkdown(node,"block").replace(/[\n]{2,}/g,"\n\n").replace(/^[\n]+/,"").replace(/[\n]+$/,"");
+    return nodeToMarkdown(node, "block").replace(/[\n\s]+/, "\n").replace(/[\n]{2,}/g, "\n");
 }
 
 // Handling MarkDown Links
@@ -144,7 +144,6 @@ function getDomSelection() {
     }
     return domnode;
 }
-
 
 // Email Generation
 // ----------------
@@ -179,3 +178,7 @@ var doctitle = getDocTitle();
 var docuri = getDocUri();
 var docdate = getDocDate();
 var domnode = getDomSelection();
+// convert the selection into Markdown
+for (var i = 0, len = domnode.childNodes.length; i < len; ++i) {
+    docbody += toMarkdown(domnode.childNodes[i]);
+}
