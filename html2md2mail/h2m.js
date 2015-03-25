@@ -228,3 +228,5 @@ for (var i = 0, len = domnode.childNodes.length; i < len; ++i) {
 }
 // adding to the body the links summary
 docbody += createLinksIndex(linkregistry);
+// sending email
+toMail(docbody, doctitle, docdate, docuri);
