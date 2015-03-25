@@ -16,7 +16,7 @@ Karl Dubost. MIT License.
 */
 
 function markdownEscape(text){
-    return text.replace(/\s+/g," ").replace(/[\\\-*_>#]/g,"\\$&");
+    return text.replace(/\s+/g," ").replace(/[\\*_>#]/g,"\\$&");
 }
 
 function repeat(str,times){
