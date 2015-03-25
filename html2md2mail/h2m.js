@@ -15,14 +15,21 @@ Karl Dubost. MIT License.
 
 */
 
+// DOM to MarkDown Code
+// --------------------
+
+
+// `markdownEscape` escape characters with a special meaning in MarkDown
 function markdownEscape(text){
     return text.replace(/\s+/g," ").replace(/[\\*_>#]/g,"\\$&");
 }
 
+// `repeat`
 function repeat(str,times){
     return (new Array(times+1)).join(str)
 }
 
+// `childsToMarkdown` to navigate the children tree
 function childsToMarkdown(tree,mode){
     var res = "";
     for(var i=0, l=tree.childNodes.length; i<l; ++i){
@@ -31,12 +38,14 @@ function childsToMarkdown(tree,mode){
     return res;
 }
 
+// `nodeToMarkdown` is the core of the conversion
 function nodeToMarkdown(tree,mode){
     var nl = "\n\n";
     if(tree.nodeType == 3){ // Text node
         return markdownEscape(tree.nodeValue)
     }else if(tree.nodeType == 1){
         if(mode == "block"){
+            // taking care of block tags
             switch(tree.tagName.toLowerCase()){
                 case "br":
                     return nl;
@@ -107,6 +116,20 @@ function nodeToMarkdown(tree,mode){
     }
 }
 
+// `toMarkdown` output the final converted text into MarkDown
 function toMarkdown(node){
     return nodeToMarkdown(node,"block").replace(/[\n]{2,}/g,"\n\n").replace(/^[\n]+/,"").replace(/[\n]+$/,"");
 }
+
+// Handling MarkDown Links
+// -----------------------
+
+// Selection of Content in Web Page
+// --------------------------------
+
+// Email Generation
+// ----------------
+
+// Web Document Parameters
+// -----------------------
+
