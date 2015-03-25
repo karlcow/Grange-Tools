@@ -133,3 +133,19 @@ function toMarkdown(node){
 // Web Document Parameters
 // -----------------------
 
+// `getDocTitle` returns the title of Web document
+function getDocTitle() {
+    return document.title;
+}
+
+// `getDocDate` returns the date of Web document
+function getDocDate() {
+    // TODO. Better heuristics for dates because of server badly configured
+    // Maybe a way to tell the user that the date is dubious.
+    return new Date(document.lastModified).toUTCString();
+}
+
+// `getDocUri` returns URI of Web document
+function getDocUri() {
+    return document.location;
+}
