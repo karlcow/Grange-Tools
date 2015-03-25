@@ -124,6 +124,20 @@ function toMarkdown(node){
 // Handling MarkDown Links
 // -----------------------
 
+// `getLinkIndex` collect links in the selection.
+// And avoid duplicates.
+function getLinkIndex(link, linkregistry) {
+    var registrylength = keys(linkregistry).length;
+    if (linkregistry[link] === undefined) {
+        linkindex = registrylength + 1;
+        linkregistry[link] = linkindex;
+    } else {
+        linkindex = linkregistry[link];
+    }
+    return [linkindex, linkregistry];
+}
+
+
 // Selection of Content in Web Page
 // --------------------------------
 
