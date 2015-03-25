@@ -175,6 +175,23 @@ function getDomSelection() {
 // Email Generation
 // ----------------
 
+// `toMail` creates an email ready to send
+function toMail(docbody, doctitle, docdate, docuri) {
+    var mail = 'mailto:?SUBJECT=';
+    mail += encodeURIComponent(doctitle);
+    mail += '&BODY=';
+    mail += escape('\nTitle: ');
+    mail += encodeURIComponent(doctitle);
+    mail += escape('\nURI:   ');
+    mail += encodeURIComponent(docuri);
+    mail += escape('\nDate:  ');
+    mail += encodeURIComponent(docdate);
+    mail += escape('\n\n');
+    mail += encodeURIComponent(docbody);
+    mail += escape('\n\n');
+    return location.href = mail
+}
+
 // Web Document Parameters
 // -----------------------
 
@@ -209,3 +226,5 @@ var domnode = getDomSelection();
 for (var i = 0, len = domnode.childNodes.length; i < len; ++i) {
     docbody += toMarkdown(domnode.childNodes[i]);
 }
+// adding to the body the links summary
+docbody += createLinksIndex(linkregistry);
