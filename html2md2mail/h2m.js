@@ -101,7 +101,11 @@ function nodeToMarkdown(tree,mode){
             case "code": // Inline version of code
                 return "`" + childsToMarkdown(tree,"inline") + "`";
             case "a":
-                return "[" + childsToMarkdown(tree,"inline") + "](" + tree.getAttribute("href") + ")";
+                var link = tree.getAttribute("href");
+                var linkinfo = getLinkIndex(link, linkregistry);
+                var linkindex = linkinfo[0];
+                linkregistry = linkinfo[1];
+                return "[" + childsToMarkdown(tree, "inline") + "][" + linkindex + "]";
             case "img":
                 return nl + "[_Image_: " + markdownEscape(tree.getAttribute("alt")) + "](" + tree.getAttribute("src") + ")" + nl;
             case "script":
