@@ -137,6 +137,14 @@ function getLinkIndex(link, linkregistry) {
     return [linkindex, linkregistry];
 }
 
+// `createLinksIndex` creates a summary of all links
+function createLinksIndex(linkregistry) {
+    var linksummary = '\n\n';
+    for (var link in linkregistry) {
+        linksummary += '[' + linkregistry[link] + ']: ' + link + '\n';
+    }
+    return linksummary
+}
 
 // Selection of Content in Web Page
 // --------------------------------
