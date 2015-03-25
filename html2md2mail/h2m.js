@@ -136,6 +136,7 @@ function getDomSelection() {
         // https://developer.mozilla.org/en-US/docs/Web/API/Selection/rangeCount
         if (selection.rangeCount) {
             for (var i = 0, len = selection.rangeCount; i < len; ++i) {
+                // disjoint selections stay in individual blocks
                 var container = document.createElement("div");
                 container.appendChild(selection.getRangeAt(i).cloneContents());
                 domnode.appendChild(container);
