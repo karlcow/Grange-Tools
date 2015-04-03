@@ -80,6 +80,9 @@ function nodeToMarkdown(tree, mode) {
                     return nl + repeat("#", +tree.tagName[1]) + "  " + childsToMarkdown(tree, "inline") + nl;
                 case "blockquote":
                     return nl + "> " + childsToMarkdown(tree, "inline") + nl;
+                default:
+                    console.log("[toMarkdown] - not a block element " + tree.tagName);
+
             }
         }
         if (/^[ou]+$/.test(mode)) {
@@ -87,7 +90,7 @@ function nodeToMarkdown(tree, mode) {
                 return "\n" + repeat("  ", mode.length - 1) + (mode[mode.length - 1] == "o" ? "1. " : "- ") + childsToMarkdown(tree, mode + "l");
             } else {
                 console.log("[toMarkdown] - invalid element at this point " + mode.tagName);
-                return childsToMarkdown(tree, "inline")
+                return childsToMarkdown(tree, "inline");
             }
         } else if (/^[ou]+l$/.test(mode)) {
             if (tree.tagName == "UL") {
@@ -108,6 +111,7 @@ function nodeToMarkdown(tree, mode) {
             case "code": // Inline version of code
                 return "`" + childsToMarkdown(tree, "inline") + "`";
             case "a":
+                console.log("anchor " + tree.tagName);
                 var link = tree.getAttribute("href");
                 var linkinfo = getLinkIndex(link, linkregistry);
                 var linkindex = linkinfo[0];
@@ -120,7 +124,7 @@ function nodeToMarkdown(tree, mode) {
             case "meta":
                 return "";
             default:
-                console.log("[toMarkdown] - undefined element " + tree.tagName)
+                console.log("[toMarkdown] - undefined element " + tree.tagName);
                 return childsToMarkdown(tree, mode);
         }
 
@@ -138,7 +142,7 @@ function toMarkdown(node) {
 // `getLinkIndex` collect links in the selection.
 // And avoid duplicates.
 function getLinkIndex(link, linkregistry) {
-    var registrylength = keys(linkregistry).length;
+    registrylength = keys(linkregistry).length;
     if (linkregistry[link] === undefined) {
         linkindex = registrylength + 1;
         linkregistry[link] = linkindex;
@@ -224,6 +228,7 @@ function getDocUri() {
 
 // we need a registry for Markdown links
 var linkregistry = Object.create(null);
+var registrylength = 0;
 var docbody = '';
 var doctitle = getDocTitle();
 var docuri = getDocUri();
