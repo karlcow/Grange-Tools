@@ -142,7 +142,8 @@ function toMarkdown(node) {
 // `getLinkIndex` collect links in the selection.
 // And avoid duplicates.
 function getLinkIndex(link, linkregistry) {
-    registrylength = keys(linkregistry).length;
+    console.log("[getLinkIndex] - link " + link);
+    registrylength = Object.keys(linkregistry).length;
     if (linkregistry[link] === undefined) {
         linkindex = registrylength + 1;
         linkregistry[link] = linkindex;
