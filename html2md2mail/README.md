@@ -4,11 +4,20 @@ This bookmarklet does:
 2. Convert the DOM to MarkDown
 3. Prepare an email with the content as a MultiMarkDown
 
+See below for the Manual in colors.
+
+## How to install
 [Instructions for the bookmarklet](http://www.la-grange.net/2015/04/06/bookmarklet.html)
 
 This has been tested on Firefox 36.
 Any new issue is welcome. 
-Even better code to fix the bookmarklet.
+Even better, code to fix the bookmarklet.
+
+## Manual
+
+Technicolor Manual
+
+![Steps Screenshots](http://www.la-grange.net/2015/04/06/bookmarklet-manual.jpg)
 
 ## Caveats:
 
