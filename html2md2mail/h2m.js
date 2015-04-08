@@ -15,7 +15,7 @@ Karl Dubost. MIT License.
 
 TODO: Normalize relative links starting with /something or ../foo/bar/
 */
-
+"use strict";
 // DOM to MarkDown Code
 // --------------------
 
@@ -143,6 +143,10 @@ function toMarkdown(node) {
 // And avoid duplicates.
 function getLinkIndex(link, linkregistry) {
     console.log("[getLinkIndex] - link " + link);
+    if (!(link.startsWith('http://') || link.startsWith('https://'))){
+        // we got a relative link that we need to handle
+        link = normalizeLink(link, docorigin);
+    }
     registrylength = Object.keys(linkregistry).length;
     if (linkregistry[link] === undefined) {
         linkindex = registrylength + 1;
@@ -160,6 +164,16 @@ function createLinksIndex(linkregistry) {
         linksummary += '[' + linkregistry[link] + ']: ' + link + '\n';
     }
     return linksummary;
+}
+
+function normalizeLink(link, docorigin) {
+    var normalized_uri = '';
+    if (link.startsWith('/')){
+        normalized_uri = docorigin + link;
+    } else {
+        normalized_uri = docorigin + '/' + link;
+    }
+    return normalized_uri;
 }
 
 // Selection of Content in Web Page
@@ -228,6 +242,7 @@ function getDocUri() {
 // ------------
 
 // we need a registry for Markdown links
+var docorigin = document.location.origin;
 var linkregistry = Object.create(null);
 var registrylength = 0;
 var docbody = '';
