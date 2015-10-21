@@ -22,12 +22,33 @@ def fetch_note(uri):
     return content
 
 
+def parse_note(content):
+    '''Parses a note and sends back a data structure.'''
+    grenier = []
+    # There might not be a quote.
+    quote = ''
+    for line in content:
+        line.strip()
+        if not line.startswith('---'):
+            if line.startswith('>'):
+                # remove the first > character
+                quote = line[1:].strip('\n')
+            elif line.startswith('http'):
+                link = line.strip('\n')
+            else:
+                if not line.startswith('\n'):
+                    text = line.strip('\n')
+        else:
+            grenier.append(Link(link, text, quote))
+    return grenier
+
 def main():
     '''core program'''
     URI = 'file:tests/notes.md'
     # Fetch the content with a URI
     content = fetch_note(URI)
     # Parse the content
+    grenier = parse_note(content)
     # Convert in the format of your choice
     # Return the data
 
