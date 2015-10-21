@@ -15,7 +15,6 @@ Karl Dubost. MIT License.
 
 TODO: Normalize relative links starting with /something or ../foo/bar/
 */
-"use strict";
 // DOM to MarkDown Code
 // --------------------
 
