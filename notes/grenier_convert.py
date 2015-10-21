@@ -15,6 +15,13 @@ import urllib
 
 Link = namedtuple('Link', 'link text quote')
 
+LINK_TEMPLATE = '''<article>
+<p id='{link_id}'>{text} {quote}</p>
+</article>
+'''
+QUOTE_TEMPLATE = '''<q cite='{uri}'>{quote_text}</q>'''
+
+
 def fetch_note(uri):
     '''Fetches a note file and return the content.'''
     file_content = urllib.urlopen(uri)
