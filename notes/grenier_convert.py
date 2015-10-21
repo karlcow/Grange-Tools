@@ -61,6 +61,25 @@ def format_link(comment, uri):
     comment = comment.replace('[', a_start)
     comment = comment.replace(']', '</a>')
     return comment
+
+
+def format_markup(link_data, template):
+    '''Converts link_data to markup.'''
+    QUOTE_FLAG = False
+    uri = link_data.link
+    quote_text = link_data.quote
+    comment_markup = format_link(link_data.text, uri)
+    if quote_text:
+        QUOTE_FLAG = True
+        quote = QUOTE_TEMPLATE.format(
+            uri=uri,
+            quote_text=quote_text)
+    return LINK_TEMPLATE.format(
+        link_id=link_id(link_data.text),
+        text=comment_markup,
+        quote=quote if QUOTE_FLAG else '')
+
+
 def main():
     '''core program'''
     URI = 'file:tests/notes.md'
