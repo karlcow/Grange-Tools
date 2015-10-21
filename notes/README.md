@@ -16,20 +16,6 @@ http://www.japantimes.co.jp/life/2015/10/17/lifestyle/whats-name-japan-debates-w
 ```
 
 Il doit probablement être converti en une structure de données, peut-être namedtuple.
-from collections import namedtuple
-   Book = namedtuple("Book", "author title genre")
-   books = [
-           Book("Pratchett", "Nightwatch", "fantasy"),
-           Book("Pratchett", "Thief Of Time", "fantasy"),
-           Book("Le Guin", "The Dispossessed", "scifi"),
-           Book("Le Guin", "A Wizard Of Earthsea", "fantasy"),
-           Book("Turner", "The Thief", "fantasy"),
-           Book("Phillips", "Preston Diamond", "western"),
-           Book("Phillips", "Twice Upon A Time", "scifi"),
-]
-   fantasy_authors = {
-           b.author for b in books if b.genre == 'fantasy'}
-
 
 ```python
 from collections import namedtuple
