@@ -88,6 +88,10 @@ def main():
     # Parse the content
     grenier = parse_note(content)
     # Convert in the format of your choice
+    # markup = ''
+    for link_data in grenier:
+        print format_markup(link_data, LINK_TEMPLATE)
+
     # Return the data
 
 if __name__ == "__main__":
