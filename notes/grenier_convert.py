@@ -16,9 +16,9 @@ import urllib
 Link = namedtuple('Link', 'link text quote')
 
 def fetch_note(uri):
-    '''Fetch a note file and return the content.'''
+    '''Fetches a note file and return the content.'''
     file_content = urllib.urlopen(uri)
-    content = file_content.read()
+    content = file_content.readlines()
     return content
 
 
