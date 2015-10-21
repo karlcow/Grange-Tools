@@ -9,8 +9,8 @@ MIT License
 """
 
 from collections import namedtuple
+import hashlib
 import sys
-
 import urllib
 
 Link = namedtuple('Link', 'link text quote')
@@ -41,6 +41,12 @@ def parse_note(content):
         else:
             grenier.append(Link(link, text, quote))
     return grenier
+
+
+def link_id(text):
+    '''Retuns an id for the markup.'''
+    return 'id{0}'.format(hashlib.sha1(text).hexdigest()[:10])
+
 
 def main():
     '''core program'''
