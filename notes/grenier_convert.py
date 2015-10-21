@@ -8,6 +8,7 @@ Copyright (c) 2015 La Grange. All rights reserved.
 MIT License
 """
 
+import argparse
 from collections import namedtuple
 import hashlib
 import sys
@@ -19,7 +20,15 @@ LINK_TEMPLATE = '''<article>
 <p id='{link_id}'>{text} {quote}</p>
 </article>
 '''
+
 QUOTE_TEMPLATE = '''<q cite='{uri}'>{quote_text}</q>'''
+
+INTRO = '''
+---------------------------
+Converting notes located at
+{0}
+---------------------------
+'''
 
 
 def fetch_note(uri):
@@ -80,9 +89,19 @@ def format_markup(link_data, template):
         quote=quote if QUOTE_FLAG else '')
 
 
+def parse_cli():
+    '''Returns CLI arguments.'''
+    parser = argparse.ArgumentParser(description='Convert notes in markup.')
+    parser.add_argument('file', metavar='f', type=file, help='a filepath')
+    args = parser.parse_args()
+    return args.file
+
+
 def main():
     '''core program'''
-    URI = 'file:tests/notes.md'
+    filename = parse_cli()
+    URI = filename.name or 'file:tests/notes.md'
+    print(INTRO.format(URI))
     # Fetch the content with a URI
     content = fetch_note(URI)
     # Parse the content
