@@ -8,10 +8,12 @@ Copyright (c) 2015 La Grange. All rights reserved.
 MIT License
 """
 
+from collections import namedtuple
 import sys
 
 import urllib
 
+Link = namedtuple('Link', 'link text quote')
 
 def fetch_note(uri):
     '''Fetch a note file and return the content.'''
