@@ -55,6 +55,12 @@ def link_id(text):
     return 'id{0}'.format(hashlib.sha1(text).hexdigest()[:10])
 
 
+def format_link(comment, uri):
+    '''Returns a linkified text.'''
+    a_start = "<a href='{uri}'>".format(uri=uri)
+    comment = comment.replace('[', a_start)
+    comment = comment.replace(']', '</a>')
+    return comment
 def main():
     '''core program'''
     URI = 'file:tests/notes.md'
