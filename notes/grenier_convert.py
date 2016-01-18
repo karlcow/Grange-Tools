@@ -16,9 +16,13 @@ import urllib
 
 Link = namedtuple('Link', 'link text quote')
 
-LINK_TEMPLATE = '''<article>
+# LINK_TEMPLATE = '''<article>
+# <p id='{link_id}'>{text} {quote}</p>
+# </article>
+# '''
+
+LINK_TEMPLATE = '''
 <p id='{link_id}'>{text} {quote}</p>
-</article>
 '''
 
 QUOTE_TEMPLATE = '''<q cite='{uri}'>{quote_text}</q>'''
@@ -56,6 +60,8 @@ def parse_note(content):
                     text = line.strip('\n')
         else:
             grenier.append(Link(link, text, quote))
+            # let's reset the values
+            quote, text, link = '', '', ''
     return grenier
 
 
