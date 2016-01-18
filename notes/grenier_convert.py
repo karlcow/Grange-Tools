@@ -76,8 +76,12 @@ def link_id(text):
 def format_link(comment, uri):
     '''Returns a linkified text.'''
     a_start = "<a href='{uri}'>".format(uri=uri)
-    comment = comment.replace('[', a_start)
-    comment = comment.replace(']', '</a>')
+    if ('[' and ']') in comment:
+        comment = comment.replace('[', a_start)
+        comment = comment.replace(']', '</a>')
+    else:
+        print('OUPS. [] est manquant')
+        sys.exit(1)
     return comment
 
 
