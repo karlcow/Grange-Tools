@@ -62,6 +62,9 @@ def parse_note(content):
             grenier.append(Link(link, text, quote))
             # let's reset the values
             quote, text, link = '', '', ''
+    # grab the last one
+    if link:
+        grenier.append(Link(link, text, quote))
     return grenier
 
 
