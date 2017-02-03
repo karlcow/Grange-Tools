@@ -17,7 +17,7 @@ import urllib.request
 
 Note = namedtuple('Note', 'note_type, prose, link, quote')
 
-ARTICLE_TEMPLATE = '<article class="{type}" id={id}>{html}</article>'
+ARTICLE_TEMPLATE = '''<article class='{type}' id='{id}'>{html}</article>'''
 PROSE_TEMPLATE = '''<p>{prose}</p>'''
 QUOTE_TEMPLATE = '''<p>{prose} <q cite='{uri}'>{quote_text}</q></p>'''
 
